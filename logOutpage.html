@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<title>Simplastic_LogOut</title>
+
+ <style media="screen"></style>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<!--boostrap-->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+<link href="style.css" type="text/css" rel=stylesheet>
+</head>
+<body>
+
+ <nav>
+        <ul class="navbar justify-content-end align-items-center bg-light">
+            <span class="navbar bg-light mb-0 h3">Simplastic</span>
+            <li class="col"></li>
+            <li class="nav-item">
+                <div id="sign-in"></div>
+            </li>
+<!--
+            <li class="nav-item">
+                <button id="login" class="btn btn-outline-dark">Log In</button>
+            </li>
+-->
+            
+        </ul>
+    </nav>
+
+<div id="container" class="logout_container">
+<h1 style="col-sm" >呀! 你已經登出了</h1>
+    <div class="narration">不小心按錯嗎？<br> 沒關係，按一下按鈕重新登入吧！</div>
+
+<div class="col-sm">
+<button id=login class="btn btn-outline-dark login-btn">Login</button>
+    </div>    
+    </div>
+
+   
+         <script>
+    document.getElementById('login').addEventListener('click', e =>{
+        window.location.href='index.html';
+    });
+    </script> 
+    
+<!--    bootstrap js-->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+    
+</html>

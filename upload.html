@@ -1,0 +1,178 @@
+<head>
+    <title>Simplastic_Upload</title>
+    <style media="screen"></style>
+    <meta charset="utf-8">
+        <title></title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!--bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <!--css-->
+    <link href="style.css" rel="stylesheet">
+</head>
+
+<body>
+
+    <nav>
+        <ul class="navbar justify-content-end align-items-center bg-light">
+            <span class="navbar bg-light mb-0 h3">Simplastic</span>
+            <li class="col"></li>
+            <li class="nav-item">
+                <div id="sign-in"></div>
+            </li>
+            <li class="nav-item">
+                <button id="logOut" class="btn btn-outline-dark">Log Out</button>
+            </li>
+            <li class="nav-item">
+                <button id="logIn" class="btn btn-outline-dark">Log In</button>
+            </li>
+            
+        </ul>
+    </nav>
+
+
+    <div id="container" class="container">
+        <div class="col font">
+            <h1>上傳照片</h1>
+        </div>
+        <div class="col">
+            <div id="sign-in-status" class="narration" ></div>
+        </div>
+
+        <div id="account-details"></div>
+
+        <div id="uploadContainer" class="upload_container">
+            <!--bootstrap input-->
+
+            <div class="uploadArea">
+                <input type="file" class="custom-file-input upload" id="fileButton" value="upload">
+                <label class="upload" for="fileButton">
+                <span class="upload_narration">點擊以選擇/新增照片</span>
+                </label>
+                
+            </div>
+            <div class="progress">
+                <div id="uploader" class="progress-bar bg-warning" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" style="width: 0%">
+                </div>
+            </div>
+            <h3 id="state" class="col-sm state"></h3>
+              </div>
+
+          </div>
+
+    <script src="https://www.gstatic.com/firebasejs/4.9.1/firebase.js"></script>
+    <script>
+        // Initialize Firebase
+        var config = {
+            apiKey: "AIzaSyDZrMi4I1slkGfcjVUJfFFejUa3p1SCnmc",
+            authDomain: "simplastic-1717.firebaseapp.com",
+            databaseURL: "https://simplastic-1717.firebaseio.com",
+            projectId: "simplastic-1717",
+            storageBucket: "simplastic-1717.appspot.com",
+            messagingSenderId: "1018243931361"
+        };
+        firebase.initializeApp(config);
+    </script>
+
+
+    <!--    firebaseUI-->
+
+    <script src="https://cdn.firebase.com/libs/firebaseui/2.5.1/firebaseui.js"></script>
+    <link type="text/css" rel="stylesheet" href="https://cdn.firebase.com/libs/firebaseui/2.5.1/firebaseui.css">
+    <script type="text/javascript">
+        initApp = function() {
+            firebase.auth().onAuthStateChanged(function(user) {
+                if (user) {
+                    // User is signed in.
+                    var displayName = user.displayName;
+                    var email = user.email;
+                    var emailVerified = user.emailVerified;
+                    var photoURL = user.photoURL;
+                    var uid = user.uid;
+                    var phoneNumber = user.phoneNumber;
+                    var providerData = user.providerData;
+                    var logOutbutton = document.getElementById("logOut");
+                    var logInbutton = document.getElementById("logIn");
+                    // log out function
+                    document.getElementById('logOut').style.visibility = 'visable';
+                    document.getElementById('logIn').remove();
+
+                    logOutbutton.addEventListener('click', e => {
+                        firebase.auth().signOut();
+                        window.location.href = 'logOutpage.html';
+                    });
+                    user.getIdToken().then(function(accessToken) {
+                        document.getElementById('sign-in-status').textContent = '分享些你重複使用塑膠袋的方式吧！';
+                        document.getElementById('sign-in').textContent = 'Hello, ' + user.displayName;
+                        //                        document.getElementById('account-details').textContent = JSON.stringify({
+                        //                            displayName: displayName,
+                        //                            email: email,
+                        //                            emailVerified: emailVerified,
+                        //                            phoneNumber: phoneNumber,
+                        //                            photoURL: photoURL,
+                        //                            uid: uid,
+                        //                            accessToken: accessToken,
+                        //                            providerData: providerData
+                        //                        }, null, '  ');
+                    });
+
+                    //upload image
+
+                    var uploader = document.getElementById('uploader');
+                    var fileButton = document.getElementById('fileButton');
+                    var state = document.getElementById('state');
+                    // listen for file selection
+                    fileButton.addEventListener('change', function(e) {
+                        //get file
+                        var file = e.target.files[0];
+                        //create ref
+                        var storageRef = firebase.storage().ref(user.displayName.toString());
+                        var imgRef = storageRef.child(file.name + '-' + Date());
+                        //upload file
+                        var task = imgRef.put(file);
+                        //update progress bar
+                        task.on('state_changed',
+                            function progress(snapshot) {
+                                var percentage = ((snapshot.bytesTransferred / snapshot.totalBytes) * 100).toFixed(0);
+                                uploader.value = percentage;
+                                $("#uploader")
+                                    .css("width", percentage + "%")
+                                    .attr("aria-valuenow", percentage)
+                                    .text(percentage + "%");
+                                state.innerHTML = "上傳中...";
+                            },
+                            function error(err) {
+                                state.innerHTML = "上傳錯誤，請重新上傳";
+                            },
+                            function complete() {
+                                state.innerHTML = "上傳完成!";
+                                location.reload();
+                            });
+                    });
+                } else {
+                    // User is signed out.
+                    document.getElementById('sign-in-status').textContent = '請先登入喔!';
+                    document.getElementById('state').textContent = "";
+                    document.getElementById('logOut').remove();
+                    document.getElementById('uploadContainer').style.visibility = 'hidden';
+                    document.getElementById('logIn').style.visibility = 'visable';
+                    document.getElementById('logIn').addEventListener('click', e => {
+                        window.location.href = 'index.html';
+                        document.getElementById('sign-in').textContent = 'Sign in';
+                        document.getElementById('account-details').textContent = 'null';
+
+                    });
+                }
+            }, function(error) {
+                console.log(error);
+            });
+        };
+        window.addEventListener('load', function() {
+            initApp()
+        });
+    </script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+</body>

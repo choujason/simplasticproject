@@ -1,0 +1,217 @@
+    @media only screen and (min-width: 769px) {
+        .maintitle {
+            font-size: 2vh;
+            color: #333333;
+            text-align: right;
+            padding-top: 5px;
+        }
+        .container {
+            background-color: white;
+            text-align: center;
+            padding-bottom: 1%;
+            margin-top: 7%;
+
+        }
+        .loginbtn {  /*        put on nav bar*/
+            width: 0px;
+            height: 0px;
+            background-color: white;
+            color: white;
+        }
+    
+         .logout_container {
+            background-color: white;
+            height: 75%;
+            text-align: center;
+            margin-top: 15%;
+            padding-bottom: 5%;
+            padding-top: 5%;
+        }
+        .font {
+
+            margin-top: 3%;
+
+
+        }
+        body {
+            background-color: #FFCC33;
+            font-family: sans-serif;
+            color: #333333;
+            line-height: 1.8;
+            /*        display: flex;*/
+            width: 100%;
+            padding: 0;
+            margin: 0;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+        }
+        nav {
+            width: 100%;
+            align-items: baseline;
+            text-align: center;
+        }
+        button {
+            width: 120px;
+            height: 40px;
+            font-size: 15px;
+            background-color: #FFCC33;
+            text-align: center;
+            color: #ffffff;
+        }
+        li {
+            display: table-cell;
+            text-decoration-line: none;
+            float: right;
+            line-height: 30px;
+            text-align: center;
+            margin-right: 3%;
+        }
+
+        h1 {
+            padding-top: 15px;
+            font-weight: 600;
+        }
+
+        .uploadarea {
+            background-image: url(icon_upload.png);
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: 10%;
+            background-color: dimgray;
+            height: 50%;
+        }
+        .upload {
+            height: 70%;
+        }
+
+        .progress {
+            margin-top: 3%;
+            margin-left: 15px;
+            margin-right: 15px;
+        }
+        .state {
+            margin-top: 3%;
+            font-size: 18px;
+        }
+        .narration {
+            font-size: 18px;
+            color: black;
+            padding-bottom: 10px;
+            padding-top: 10px;
+
+        }
+        .upload_narration {
+            font-size: 18px;
+            color: white;
+        }
+ .login-btn{        /*        put on log-out page*/
+        height: 100px;
+        width: 60%;
+        font-size: 30px;
+        margin-top: 50px;
+            
+        }
+
+    }
+
+
+
+    @media only screen and (min-width: 0px) and (max-width: 420px) {
+
+        .maintitle {
+            font-size: 3vh;
+            color: #333333;
+            text-align: right;
+            padding-top: 5px;
+        }
+        .container {
+/*            height: 100%;*/
+            background-color: white;
+            text-align: center;
+            font-size: 12px;
+            margin-top: 10%;
+        }
+
+        .logout_container {
+            background-color: white;
+            height: 75%;
+            text-align: center;
+            margin-top: 30%;
+            padding-bottom: 15%;
+        }
+        
+        
+        body {
+            background-color: #FFCC33;
+            font-family: sans-serif;
+            color: #333333;
+            line-height: 1.8;
+        }
+
+        button {
+            width: 120px;
+            height: 40px;
+            font-size: 15px;
+            background-color: #FFCC33;
+            text-align: center;
+            color: #ffffff;
+        }
+        li {
+            display: table-cell;
+            text-decoration-line: none;
+            float: right;
+            line-height: 30px;
+            text-align: center;
+            margin-right: 3%;
+        }
+
+        h1 {
+            font-size: 30px;
+            padding-top: 15px;
+            font-weight: bold;
+        }
+
+        .uploadarea {
+            background-image: url(icon_upload.png);
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: 50%;
+            background-color: #FFBA1C;
+            border-radius: 10px;
+            height: 80%;
+        }
+        .upload {
+            height: 80%;
+        }
+        .progress {
+            margin-top: 5%;
+            margin-left: 15px;
+            margin-right: 15px;
+        }
+        .state {
+            margin-top: 5%;
+            font-size: 18px;
+        }
+
+        .narration {
+            font-size: 18px;
+            color: black;
+            margin-bottom: 10px;
+        }
+        .upload_narration {
+            font-size: 18px;
+            color: white;
+        }
+        .login-btn{
+        height: 100px;
+        width: 60%;
+        font-size: 30px;
+        margin-top: 50px;
+        }
+        .upload_container{
+        background-color: white;
+            
+        }
+
+    }

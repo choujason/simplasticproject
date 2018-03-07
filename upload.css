@@ -1,4 +1,5 @@
-/*style.css    */
+/*upload.css   */
+
 @media only screen and (min-width: 769px) {
 
         .container {
@@ -9,26 +10,7 @@
             max-width:90%;
 
         }
-/*
-        .loginbtn {
-                    put on nav bar
-            width: 0px;
-            height: 0px;
-            background-color: white;
-            color: white;
-        }
-*/
 
-/*
-        .logout_container {
-            background-color: white;
-            height: 75%;
-            text-align: center;
-            margin-top: 15%;
-            padding-bottom: 5%;
-            padding-top: 5%;
-        }
-*/
         .font {
             margin-top: 3%;
         }
@@ -37,7 +19,7 @@
             font-family: 'Noto Sans', sans-serif;
             color: #333333;
             line-height: 1.8;
-            /*        display: flex;*/
+/*            display: flex;*/
             width: 100%;
             padding: 0;
             margin: 0;
@@ -50,9 +32,7 @@
             width: 120px;
             height: 40px;
             font-size: 15px;
-            background-color: #FFCC33;
             text-align: center;
-            color: #ffffff;
         }
         li {
             display: table-cell;
@@ -95,35 +75,17 @@
             font-size: 18px;
             color: white;
         }
-        .login-btn {
-            /*        put on log-out page*/
-            height: 100px;
-            width: 60%;
-            font-size: 30px;
-            margin-top: 50px;
 
+        .id_state {
+            text-align: right;
         }
-        
 
-    }  /*end of width 769px*/
+
+    }
+
+    /*end of width 769px*/
 
     @media only screen and (min-width: 0px) and (max-width: 420px) {
-
-        .container {
-            background-color: white;
-            text-align: center;
-            font-size: 12px;
-            margin-top: 15%;
-        }
-
-        .logout_container {
-            background-color: white;
-            height: 75%;
-            text-align: center;
-            margin-top: 30%;
-            padding-bottom: 15%;
-        }
-
 
         body {
             background-color: #FFCC33;
@@ -142,15 +104,35 @@
         }
         li {
             display: table-cell;
-            
         }
-        
-       
+
+
 
         h1 {
             font-size: 30px;
             padding-top: 15px;
             font-weight: bold;
+        }
+        
+        .maintitle {
+            font-size: 3vh;
+            color: #333333;
+            text-align: right;
+            padding-top: 5px;
+        }
+        .container {
+            background-color: white;
+            text-align: center;
+            font-size: 12px;
+            margin-top: 15%;
+        }
+
+        .logout_container {
+            background-color: white;
+            height: 75%;
+            text-align: center;
+            margin-top: 30%;
+            padding-bottom: 15%;
         }
 
         .uploadarea {
@@ -172,7 +154,7 @@
         }
         .state {
             margin-top: 5%;
-            font-size: 18px;
+            font-size: 16px;
         }
 
         .narration {
@@ -194,11 +176,9 @@
             background-color: white;
 
         }
-         .font {
-            margin-top: 20%;
+        .font {
+            margin-top: 0%;
         }
- .id_state {
-        margin-top:1rem;
-        }
+        
 
     }

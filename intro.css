@@ -39,8 +39,25 @@
      h4 {
          margin-top: 0.8rem;
      }
-    
+     
+     .rounded-circle{
+         
+         width:60%;
+         
+     }    
  }/*end of width 769px*/
+
+@media only screen and (min-width: 420px) and (max-width: 769px) {
+
+
+.rounded-circle{
+         
+         width:60%;
+         
+     }    
+
+}
+
 
 @media only screen and (min-width: 0px) and (max-width: 420px) {
     .lead{
@@ -65,5 +82,13 @@
         
     font-size: 1.1rem;
     }
+    
+     .rounded-circle{
+         
+         width:60%;
+         
+     }    
+    
+    
     
 }/*end of width 420px*/

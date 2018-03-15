@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Simplastic獎賞機制</title>
+    <style media="screen"></style>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!--bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <!--css-->
+    <link href="style.css" rel="stylesheet">
+    <link href="reward.css" rel="stylesheet">
+    <!--    google font resource    -->
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans" rel="stylesheet">
+
+</head>
+
+<body class="intro">
+
+    <nav class="navbar navbar-expand-md navbar-light bg-light">
+        <span class="bg-light mb-0 h3">Simplastic</span>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+
+            <ul class="navbar-nav mx-4">
+                <li class="nav-item mx-3">
+                    <a class="nav-link" href="introduction.html">專案介紹</a>
+                </li>
+                <li class="nav-item mx-3 active">
+                    <a class="nav-link" href="#">獎勵機制<span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item mx-3">
+                    <a class="nav-link" href="upload.html">回報系統</a>
+                </li>
+                <li class="nav-item mx-3">
+                    <button id="logbtn" class="btn btn-outline-dark"></button>
+                    <!-- login/out button-->
+                </li>
+            </ul>
+        </div>
+        <ul class="navbar-nav mx-4">
+            <li class="id_state mx-3">
+                <div id="sign-in"></div>
+            </li>
+        </ul>
+    </nav>
+    <div class="container" id="container">
+
+        <!------>
+        <hr class="featurette-divider">
+        <div class="row featurette">
+            <div class="col-md text-justify">
+                <h1 class="featurette-heading maintitle">你的努力值得被肯定！</h1>
+                <p class="lead center">我們要感謝您所做的一切</p>
+
+                <p>環境友善行為，是個容易，卻又不是這麼好在生活中實踐的行為。我們認為，應該要鼓勵人們在生活中，多多執行這類型對於環境有益的好事！不管行為多麽簡單，只要持續去努力，最終一定會有顯著的成果！<br> 幸運的是，Simplastic擁有一群很棒的合作夥伴，支持著我們去推動Simplastic。他們不僅在販售過程中，使用我們的Simplastic可分解塑膠袋，更對於那些願意重複使用袋子的顧客，提供一些十分誘人的優惠，以鼓勵消費者重複使用袋子。因此，在下次消費時，別忘了帶上你的Simplastic 塑膠袋，在環境友善的同時，更能享受到來自店家的優惠！
+                </p>
+                <p class="text-muted ml-intro">*註解</p>
+            </div>
+
+        </div>
+        <!--            ---->
+
+        <hr class="featurette-divider">
+        <div class="row featurette">
+            <div class="col-md-7 order-md-2 text-justify">
+                <h2 class="featurette-heading">加依軒+1小籠湯包 成大旗艦店</h2>
+              <div class="shop_intro">
+                <p class="lead">地址：台南市東區育樂街42號<br>
+            優惠：集滿3點，換取奶皇包1個</p>
+                <p><a class="btn btn-secondary align-self-end ml-intro" href="https://www.facebook.com/310690452444447/" role="button">官方網頁&raquo;</a></p>
+            </div>
+            </div>
+            <div class="col-md-5 div_img">
+                <img class="featurette-image img-fluid mx-auto" src="shop/jia_yi_syuan.jpg" width="300 "alt="加依軒+1小籠湯包 成大旗艦店">
+            </div>
+        </div>
+
+       
+        <hr class="featurette-divider">
+        
+<!--
+           <div id="content">
+            <h2 class="featurette-heading">使用流程</h2>
+            <div class="row">
+                <div class="col-sm-4">
+                    <img class="rounded-circle" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Generic placeholder image" width="140" height="140">
+                    <h4>重複使用</h4>
+                    <p>在友善店家取得袋子，並盡可能的重複使用Simplastic袋子。<br>如果您很有興趣想要取得Simplastic袋子，歡迎直接<a href="contact.html">與我們聯繫！</a></p>
+                    <p><a class="btn btn-secondary" href="#" role="button">索取位置&raquo;</a></p>
+                </div>
+
+                <div class="col-sm-4">
+                    <img class="rounded-circle" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Generic placeholder image" width="140" height="140">
+                    <h4>積點</h4>
+                    <p>當在友善店家消費時，攜帶Simplastic袋子，將可以參加積點！<br>除此之外，將您使用Simplastic的狀況，使用<a href="upload.html">Simplastic回報系統</a>來換取更多的獎勵機會！</p>
+                    <p><a class="btn btn-secondary" href="#" role="button">了解更多&raquo;</a></p>
+                </div>
+                <div class="col-sm-4">
+                    <img class="rounded-circle" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Generic placeholder image" width="140" height="140">
+
+                    <h4>回報/兌換</h4>
+                    <p>當Simplastic袋子上的點數，集到店家所要求後，將可以與店家兌換相對應的優惠喔！<br>當回報系統達到一定程度時，將可以換去更多豐富的獎賞。</p>
+                    <p><a class="btn btn-secondary" href="upload.html" role="button">馬上回報！</a></p>
+                </div>
+            </div>
+        </div>
+-->
+        <!--end of content-->
+    </div>
+
+    <!--firebase js-->
+    <script src="https://www.gstatic.com/firebasejs/4.9.1/firebase.js"></script>
+    <script src="firebase_config.js"></script>
+    <script src="firebase_auth.js"></script>
+
+    <!--        boostrap js-->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+
+</html>

@@ -4,45 +4,73 @@
          text-align: center;
          margin-bottom: 3%;
      }
-     .center{
-         
+     .center {
+
          text-align: center;
      }
-     
+
      .featurette-divider {
          margin: 5rem 0;
          /*    Space out the Bootstrap <hr> more */
      }
-     
-/*
-     .shop_intro{
-    margin-top: 25%;
-     }
-*/
-     
-     .featurette-heading{
+
+
+     .featurette-heading {
          font-weight: 600;
-         
+
      }
-   
-     }    
- }/*end of width 769px*/
 
-@media only screen and (min-width: 420px) and (max-width: 769px) {
+     .bold {
+         font-weight: 600;
+     }
+
+     .addr {
+         font-size: 1rem;
+     }
+
+ }
+
+ }
+
+ /*end of width 769px*/
+
+ @media only screen and (min-width: 420px) and (max-width: 769px) {
 
 
-.rounded-circle{
-         
-         width:60%;
-         
-     }    
 
-}
+     .rounded-circle {
+
+         width: 60%;
+
+     }
+
+ }
 
 
-@media only screen and (min-width: 0px) and (max-width: 420px) {
-   
-    
-    
-    
-}/*end of width 420px*/
+ @media only screen and (min-width: 0px) and (max-width: 420px) {
+
+     .featurette-heading {
+         font-weight: 600;
+         font-size: 1.5rem;
+         margin-top: 20px;
+     }
+     .lead {
+         font-size: 1rem;
+     }
+
+     .bold {
+         font-weight: 600;
+     }
+
+     .title_narr {
+
+
+         font-size: 1rem;
+     }
+
+
+
+
+ }
+
+ /*end of width 420px*/

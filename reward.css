@@ -131,7 +131,9 @@
          text-align: center;
      }
 
-
+     #process_reuse{
+         display: none;
+     }
  }
 
  /*end of width 420px*/

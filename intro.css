@@ -1,94 +1,120 @@
- @media only screen and (min-width: 769px) {
+@import url(//fonts.googleapis.com/earlyaccess/notosanstc.css);
 
-     .intro_title {
-         font-weight: 500;
-         color: red;
-     }
+@media only screen and (min-width: 769px) {
 
-     .ml-intro {   /* 內文標題的 margin*/
-    margin-left: 15%;
-     }
-     
-     .div_img {
-         overflow: hidden;
-         height: 250px;
-     }
-     .img-display {
-         align-content: center;
-     }
-     .featurette-divider {
-         margin: 5rem 0;
-         /*    Space out the Bootstrap <hr> more */
-     }
 
-     /* Thin out the marketing headings */
-     .featurette-heading {
-         font-weight: 600;
-         line-height: 1;
-         letter-spacing: -.05rem;
-     }
-     
-     .lead{
-    width: 70%;
-     }
+    .ml-intro {
+        margin-left: 10%;
+    }
 
-     h2 {
-         margin-bottom: 1.5rem;
-     }
-     
-     h4 {
-         margin-top: 0.8rem;
-     }
-     
-     .rounded-circle{
-         
-         width:60%;
-         
-     }    
- }/*end of width 769px*/
+    .div_img {
+        overflow: hidden;
+        height: 250px;
+    }
+    .img-display {
+        align-content: center;
+    }
+    .featurette-divider {
+        margin: 5rem 0;
+        /*    Space out the Bootstrap <hr> more */
+    }
+
+    /* Thin out the marketing headings */
+    .featurette-heading {
+        font-weight: 600;
+        line-height: 1;
+        letter-spacing: -.05rem;
+    }
+
+    .lead {
+        width: 70%;    }
+
+    h2 {
+        margin-bottom: 1.5rem;
+    }
+
+    h4 {
+        margin-top: 0.8rem;
+    }
+
+    .rounded-circle {
+        width: 60%;
+    }
+
+    .title {
+        text-align: center;
+        margin-top: 5%;
+    }
+
+    .col-text {
+        margin-top: 5%;
+        margin-left: 10%;
+        margin-right: 10%;
+        line-height: 2rem;
+        font-size: 1.1rem;
+
+
+    }
+    .col-7-text {
+        line-height: 2rem;
+        font-size: 1.1rem;
+
+        
+
+    }
+    .text-muted {
+        font-size: 0.9rem;
+        font-weight: 400;
+    }
+
+}
+
+/*end of width 769px*/
 
 @media only screen and (min-width: 420px) and (max-width: 769px) {
 
 
-.rounded-circle{
-         
-         width:60%;
-         
-     }    
+    .rounded-circle {
+
+        width: 60%;
+
+    }
 
 }
 
 
 @media only screen and (min-width: 0px) and (max-width: 420px) {
-    .lead{
-    font-size: 1.1rem;
+    .lead {
+        font-size: 1.1rem;
     }
-    
-    h2{
-    margin-bottom: 2rem;
-    margin-top: 1.5rem;
+
+    h2 {
+        margin-bottom: 2rem;
+        margin-top: 1.5rem;
     }
-    h4{
-        
-    margin-top: 1.1rem;
+    h4 {
+
+        margin-top: 1.1rem;
     }
-    
-    .div_img{
-    margin-top: 1.2rem;
-    margin-bottom: 1.2rem;        
+
+    .div_img {
+        margin-top: 1.2rem;
+        margin-bottom: 1.2rem;
     }
-    
-    p{
-        
-    font-size: 1.1rem;
+
+    p {
+
+        font-size: 1.1rem;
     }
-    
-     .rounded-circle{
-         
-         width:60%;
-         
-     }    
-    
-    
-    
-}/*end of width 420px*/
+
+    .rounded-circle {
+
+        width: 60%;
+
+    }
+
+
+
+}
+
+/*end of width 420px*/

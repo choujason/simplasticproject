@@ -1,4 +1,6 @@
 /*style.css    */
+@import url(//fonts.googleapis.com/earlyaccess/notosanstc.css);
+
 @media only screen and (min-width: 769px) {
 
         .container {
@@ -9,32 +11,18 @@
             max-width:90%;
 
         }
-/*
-        .loginbtn {
-                    put on nav bar
-            width: 0px;
-            height: 0px;
-            background-color: white;
-            color: white;
-        }
-*/
 
-/*
-        .logout_container {
-            background-color: white;
-            height: 75%;
-            text-align: center;
-            margin-top: 15%;
-            padding-bottom: 5%;
-            padding-top: 5%;
-        }
-*/
+    .simplastic_logo{
+        
+        font: Noto Sans 
+    }
+
         .font {
             margin-top: 3%;
         }
         body {
             background-color: #FFCC33;
-            font-family: 'Noto Sans', sans-serif;
+            font-family: 'Noto Sans','Noto Sans TC', sans-serif;
             color: #333333;
             line-height: 1.8;
             /*        display: flex;*/
@@ -84,6 +72,10 @@
             margin-top: 3%;
             font-size: 18px;
         }
+    
+    .bold {
+        font-weight: 600;
+    }
         .narration {
             font-size: 18px;
             color: black;

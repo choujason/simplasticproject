@@ -20,16 +20,6 @@
 
      }
 
-     
-     .rounded-circle {
-        width: 60%;
-    }
-     
-     .mainprocess_pic{
-    width: 75%;
-     }
-     
-     
      .bold {
          font-weight: 600;
      }
@@ -37,13 +27,7 @@
     .col-7-text {
         /*        padding: 0.8rem;*/
         line-height: 2rem;
-        font-size: 1.1rem;
-        
-     }
-     
-     .icon_bg{
-         
-/*         background-color: */
+        font-size: 1.2rem;
      }
      
      
@@ -55,23 +39,9 @@
         margin-left: 10%;
         margin-right: 10%;
         line-height: 2.2rem;
-        font-size: 1.1rem;
+        font-size: 1.2rem;
 
     }
-     .mt-10{
-         margin-top: 10%;
-         
-     }
-     
-     .sub-title{
-    
-                 font-size: 1.2rem;
-         margin-bottom: 5%;
-
-         
-     }
-     
-     
      
      
 

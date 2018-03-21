@@ -62,11 +62,21 @@ initApp = function () {
                     function error(err) {
                         state.innerHTML = "上傳錯誤，請重新上傳";
                     },
+                        
+                    // upload complete
                     function complete() {
-                        state.innerHTML = "上傳完成!";
-                        document.getElementById('sign-in-status').textContent = '上傳成功！';
-                        location.reload();
+                    
+                    
+                    state.innerHTML = "上傳完成!";
+                    document.getElementById('sign-in-status').textContent = '上傳成功！';
+                    document.getElementById('uploadArea').style.backgroundImage = "url('3.png')";
+                    document.getElementsByTagName("input")[0].setAttribute("type","button");
+                    fileButton.addEventListener('change', function(e) {
+                    document.getElementById('uploadArea').style.backgroundImage = "url('icon_upload.png')";
                     });
+                    
+                    //location.reload();
+                });
             });
         } else {
             // User is signed out.

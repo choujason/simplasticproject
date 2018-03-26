@@ -19,31 +19,27 @@
          font-weight: 600;
 
      }
+     .shop_intr{
+         text-align: left;
+     }
+     
+     
 
      .bold {
          font-weight: 600;
      }
 
-    .col-7-text {
-        /*        padding: 0.8rem;*/
-        line-height: 2rem;
-        font-size: 1.2rem;
+     .title {
+         text-align: center;
      }
-     
-     
-    .title {
-        text-align: center;
-    }
-.col-text {
-        margin-top: 5%;
-        margin-left: 10%;
-        margin-right: 10%;
-        line-height: 2.2rem;
-        font-size: 1.2rem;
+          .col-text {
+         margin-top: 5%;
+         margin-left: 10%;
+         margin-right: 10%;
+         line-height: 2.2rem;
+     }
 
-    }
-     
-     
+
 
  }
 
@@ -80,12 +76,21 @@
      }
 
      .title_narr {
-
-
          font-size: 1rem;
      }
-
-
+     .col-text {
+         font-size: 1.05rem;
+         line-height: 2.2rem;
+         margin-top: 10px;
+     }
+     .shop_intro{
+         font-size: 1rem;
+         text-align: center;
+     }
+     .shop_name{
+        text-align: center;
+         
+     }
 
 
  }

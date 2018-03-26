@@ -1,7 +1,7 @@
- @media only screen and (min-width: 769px) {
+ 
+@media only screen and (min-width: 769px) {
 
      .maintitle {
-         text-align: center;
          margin-bottom: 3%;
      }
      .center {
@@ -13,12 +13,10 @@
          /*    Space out the Bootstrap <hr> more */
      }
 
-
-     .featurette-heading {
-         font-weight: 600;
-
+     
+     .heading2{
+        font-size: 3rem;
      }
-
 
      .rounded-circle {
          width: 60%;
@@ -34,17 +32,12 @@
      }
 
      .col-7-text {
-         /*        padding: 0.8rem;*/
          line-height: 2rem;
          font-size: 1.1rem;
-
+         margin-left: 15%;
+         margin-right: 15%;
+         margin-top: 5%
      }
-
-     .icon_bg {
-
-         /*         background-color: */
-     }
-
 
      .title {
          text-align: center;
@@ -54,24 +47,13 @@
          margin-left: 10%;
          margin-right: 10%;
          line-height: 2.2rem;
-         font-size: 1.1rem;
-
-     }
-     .mt-10 {
-         margin-top: 10%;
-
      }
 
      .sub-title {
-
          font-size: 1.2rem;
          margin-bottom: 5%;
+         margin-top: 3%;
      }
-
-
-
-
- }
 
  }
 
@@ -106,10 +88,18 @@
      }
 
      .col-text {
-         font-size: 1.1rem;
+         font-size: 1.05rem;
+         line-height: 2.2rem;
+         margin-top: 10px;
      }
      .sub-title {
          font-size: 1.2rem;
+         margin-top: 15px;
+     }
+
+     .center {
+         text-align: center;
+
      }
 
      .mainprocess_pic {
@@ -118,20 +108,23 @@
      }
      .col-7-text {
 
-         font-size: 1.1rem;
+         font-size: 1.05rem;
+         line-height: 2.2rem;
 
      }
+
+
      .rounded-circle {
          width: 60%;
          margin-bottom: 10%;
 
      }
-     
-     .m-title{
+
+     .m-title {
          text-align: center;
      }
 
-     #process_reuse{
+     #process_reuse {
          display: none;
      }
  }

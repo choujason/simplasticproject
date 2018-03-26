@@ -27,24 +27,30 @@
     }
 
     .lead {
-        width: 70%;    }
+        width: 70%;
+    }
 
     h2 {
         margin-bottom: 1.5rem;
     }
 
     h4 {
-        margin-top: 0.8rem;
+        margin-top: 1rem;
     }
 
-    .rounded-circle {
-        width: 60%;
+    h6 {
+        font-size: 1rem;
+    }
+
+    .img-col-3 {
+        max-height: 100px;
     }
 
     .title {
         text-align: center;
         margin-top: 5%;
     }
+
 
     .col-text {
         margin-top: 5%;
@@ -58,16 +64,53 @@
     .col-7-text {
         line-height: 2rem;
         font-size: 1.1rem;
+    }
 
-        
-
+    .carousel-col-5 {
+        height: 300px;
+        overflow: hidden;
     }
     .text-muted {
         font-size: 0.9rem;
         font-weight: 400;
     }
 
+    .din {
+        height: 30%;
+        /*DIN認證尺寸*/
+    }
+
+
+    /*    carousel css*/
+    .carousel-control-next-icon {
+        background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%2300' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E")
+    }
+    .carousel-control-prev-icon {
+        background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%2300' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E")
+    }
+    .carousel-indicators li {
+        width: 10px;
+        height: 10px;
+        border-radius: 10px;
+        background-color: #6c757d
+    }
+
+    .highligh {
+        font-size: 5rem;
+    }
+
+    .carousel-indicators .active {
+        background-color: #ffc107;
+    }
+
+    /*    carousel css*/
 }
+
+ .mainprocess_pic {
+         width: 90%;
+         margin-top: 10%;
+     }
+
 
 /*end of width 769px*/
 
@@ -101,17 +144,40 @@
         margin-top: 1.2rem;
         margin-bottom: 1.2rem;
     }
-
+    .ml-intro {
+        text-align: center;
+    }
     p {
-
         font-size: 1.1rem;
     }
-
+    .featurette-heading {
+        font-weight: 600;
+        font-size: 2rem;
+        margin-top: 20px;
+    }
     .rounded-circle {
 
         width: 60%;
-
     }
+
+    .title {
+        text-align: center;
+    }
+
+    .m-title {
+        font-size: 1.4rem;
+    }
+
+    .col-text {
+        font-size: 1.05rem;
+        line-height: 2.2rem;
+        margin-top: 10px;
+    }
+
+    .highligh {
+        font-size: 5rem;
+    }
+
 
 
 

@@ -1,5 +1,6 @@
 /*style.css    */
 @import url(//fonts.googleapis.com/earlyaccess/notosanstc.css);
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans:700i');
 
 @media only screen and (min-width: 769px) {
 
@@ -13,8 +14,9 @@
         }
 
     .simplastic_logo{
-        
-        font: Noto Sans 
+    font-family: 'Noto Sans', sans-serif;
+    font-style: italic;
+    font-weight: 600;
     }
 
         .font {
@@ -115,6 +117,12 @@
             margin-top: 30%;
             padding-bottom: 15%;
         }
+        
+         .simplastic_logo{
+    font-family: 'Noto Sans', sans-serif;
+    font-style: italic;
+    font-weight: 600;
+    }
 
 
         body {

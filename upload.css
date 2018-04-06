@@ -7,10 +7,9 @@
             text-align: center;
             padding-bottom: 1%;
             margin-top: 7%;
-            max-width:90%;
-
+            max-width:90%;      
+            height: 800px;
         }
-
         .font {
             margin-top: 3%;
         }
@@ -19,13 +18,13 @@
             font-family: 'Noto Sans', sans-serif;
             color: #333333;
             line-height: 1.8;
-/*            display: flex;*/
             width: 100%;
             padding: 0;
             margin: 0;
             align-items: center;
             justify-content: center;
             flex-direction: column;
+\
 
         }
         button {
@@ -44,12 +43,12 @@
         }
 
         .uploadarea {
-            background-image: url(icon_upload.png);
+            background-image:url(img/icon_upload.png);
             background-repeat: no-repeat;
             background-position: center;
             background-size: 10%;
             background-color: dimgray;
-            height: 50%;
+            height: 60%;
         }
         .upload {
             height: 70%;
@@ -136,13 +135,13 @@
         }
 
         .uploadarea {
-            background-image: url(icon_upload.png);
+            background-image: url(img/icon_upload.png);
             background-repeat: no-repeat;
             background-position: center;
             background-size: 50%;
             background-color: #FFBA1C;
             border-radius: 10px;
-            height: 80%;
+            height: 50%;
         }
         .upload {
             height: 80%;

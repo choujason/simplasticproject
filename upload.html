@@ -1,26 +1,21 @@
-
-<!DOCTYPE html>
-<html>
-
-   <head>
-    <title>Simplastic_Upload</title>
+<head>
+    <title>Upload page</title>
     <style media="screen"></style>
     <meta charset="utf-8">
-    <title></title>
-
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
     <!--bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <!--css-->
     <link href="style.css" rel="stylesheet">
     <link href="upload.css" rel="stylesheet">
+
 </head>
 
 <body>
 
-
    <nav class="navbar navbar-expand-md navbar-light bg-light">
-            <span class="bg-light mb-0 h3">Simplastic</span>
+            <span class="bg-light mb-0 h3 simplastic_logo">Simplastic</span>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
@@ -30,6 +25,9 @@
                 <li class="nav-item mx-3">
                     <a class="nav-link" href="introduction.html">專案介紹</a>
                 </li>
+                 <li class="nav-item mx-3">
+                    <a class="nav-link" href="shop.html">夥伴店家</a>
+                </li>
                 <li class="nav-item mx-3">
                     <a class="nav-link" href="reward.html">獎勵機制</a>
                 </li>
@@ -37,7 +35,7 @@
                     <a class="nav-link" href="upload.html">回報系統<span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item mx-3">
-                    <button id="logbtn" class="btn btn-outline-dark"></button> <!-- login/out button-->
+                    <button id="logbtn" class="btn btn-outline-dark"></button> 
                 </li>
             </ul>
         </div>
@@ -46,37 +44,38 @@
            <div id="sign-in"></div>
           </li>
        </ul>
-
     </nav>
+
 
     <div id="container" class="container">
         <div class="col font">
             <h1>上傳照片</h1>
         </div>
         <div class="col">
-            <div id="sign-in-status" class="narration"></div>
+            <div id="sign-in-status" class="narration" ></div>
         </div>
 
         <div id="account-details"></div>
 
-        <div id="uploadContainer" class="upload_container">
-          
-              <!--bootstrap input-->
-            <div id="uploadArea" class="uploadArea">
+        <div id="uploadContainer" class="col">
+            <!--bootstrap input-->
+
+            <div class="uploadArea">
                 <input type="file" class="custom-file-input upload" id="fileButton" value="upload">
                 <label class="upload" for="fileButton">
                 <span class="upload_narration">點擊以選擇/新增照片</span>
-                </label>
 
+<!--                <p class="narration">Upload Here!</p>-->
+                </label>
+                
             </div>
+        </div>
             <div class="progress">
                 <div id="uploader" class="progress-bar bg-warning" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" style="width: 0%">
                 </div>
             </div>
             <h3 id="state" class="col-sm state"></h3>
         </div>
-
-    </div>
 
     <script src="https://www.gstatic.com/firebasejs/4.9.1/firebase.js"></script>
     <script src="firebase_config.js"></script>
@@ -86,12 +85,5 @@
     <link type="text/css" rel="stylesheet" href="https://cdn.firebase.com/libs/firebaseui/2.5.1/firebaseui.css">
     
     <script src="upload.js"></script>
-    
-<!--    bootstrap js-->
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 
 </body>
-
-</html>
